@@ -15,4 +15,173 @@ input {
 
 button {
   cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.sub {
+  margin-top: 4px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.stack {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  margin-bottom: 14px;
+}
+
+.admin-card {
+  border-style: dashed;
+}
+
+.notice {
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  background: #f3f3f3;
+  border: 1px solid #e4e4e4;
+}
+
+.notice.ok {
+  background: #eaf7ea;
+  border-color: #cde8cd;
+}
+
+.notice.warn {
+  background: #fff7e6;
+  border-color: #f0dfb8;
+}
+
+.notice.err {
+  background: #fff0f0;
+  border-color: #efc8c8;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+label input[type="email"],
+label input[type="text"],
+label input[type="number"],
+input[type="email"],
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  margin-top: 6px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.checkbox-label,
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.checkbox-label input,
+.radio input {
+  width: auto;
+  margin: 0;
+}
+
+.question {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.question:last-of-type {
+  border-bottom: none;
+}
+
+.qtext {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.ack {
+  margin-top: 14px;
+}
+
+.muted {
+  opacity: 0.75;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
