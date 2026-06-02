@@ -175,6 +175,15 @@ input[type="number"] {
   opacity: 0.75;
 }
 
+.linklike {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #2563eb;
+  text-decoration: underline;
+  border-radius: 0;
+}
+
 @media (max-width: 800px) {
   .grid {
     grid-template-columns: 1fr;
